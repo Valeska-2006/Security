@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sistema de Vigilancia con IA</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <nav class="navbar">
+    <div class="logo">SecurityAI</div>
+    <div class="nav-items">
+      <button class="nav-btn active" data-view="cameras">Cámaras</button>
+      <button class="nav-btn" data-view="alerts">Alertas</button>
+      <button class="nav-btn" data-view="reports">Informes</button>
+    </div>
+  </nav>
+
+  <main class="dashboard">
+    <section id="cameras" class="view active">
+      <div class="grid-cameras">
+        <div class="camera-card">
+          <img src="https://images.unsplash.com/photo-1577597557350-d6d7f510e2b5" alt="Cámara 1">
+          <div class="camera-info">
+            <h3>Cámara 1 - Zona Centro</h3>
+            <span class="status active">En línea</span>
+          </div>
+        </div>
+        <div class="camera-card">
+          <img src="https://images.unsplash.com/photo-1519575706483-221027bfbb31" alt="Cámara 2">
+          <div class="camera-info">
+            <h3>Cámara 2 - Parque Principal</h3>
+            <span class="status active">En línea</span>
+          </div>
+        </div>
+        <div class="camera-card">
+          <img src="https://images.unsplash.com/photo-1486525546686-3cd5484f1ddc" alt="Cámara 3">
+          <div class="camera-info">
+            <h3>Cámara 3 - Avenida Central</h3>
+            <span class="status">Offline</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="alerts" class="view">
+      <div class="alerts-list">
+        <div class="alert-item high">
+          <span class="alert-time">10:45</span>
+          <p>Actividad sospechosa detectada - Cámara 1</p>
+          <button class="btn-action">Ver detalles</button>
+        </div>
+        <div class="alert-item medium">
+          <span class="alert-time">09:30</span>
+          <p>Movimiento inusual - Cámara 2</p>
+          <button class="btn-action">Ver detalles</button>
+        </div>
+      </div>
+    </section>
+
+    <section id="reports" class="view">
+      <div class="reports-container">
+        <div class="report-card">
+          <h3>Informe Diario</h3>
+          <p>Resumen de actividades - 24h</p>
+          <button class="btn-generate">Generar</button>
+        </div>
+        <div class="report-card">
+          <h3>Análisis Semanal</h3>
+          <p>Estadísticas y patrones</p>
+          <button class="btn-generate">Generar</button>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <script type="module" src="/main.js"></script>
+</body>
+</html>
